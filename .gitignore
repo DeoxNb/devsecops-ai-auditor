@@ -1,0 +1,22 @@
+# Variables de entorno y credenciales (Seguridad Crítica)
+.env
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Reportes forenses generados localmente por la aplicación
+reporte_forense_*.csv
+
+# Archivos compilados de caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configuraciones del editor de código (VS Code)
+.vscode/
+
+# Archivos ocultos del sistema operativo
+.DS_Store
+Thumbs.db
