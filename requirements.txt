@@ -5,3 +5,4 @@ langchain-community
 psycopg2-binary
 pgvector
 python-dotenv
+matplotlib

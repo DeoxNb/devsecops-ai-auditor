@@ -1,11 +1,13 @@
 version: '3.8'
 services:
-  db:
+  bd:
     image: ankane/pgvector:latest
     container_name: postgres_vector
+    env_file:
+      - .env
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: adminpassword
-      POSTGRES_DB: ciberseguridad_db
+      POSTGRES_USER: ${POSTGRES_USUARIO}
+      POSTGRES_PASSWORD: ${POSTGRES_CONTRASENA}
+      POSTGRES_DB: ${POSTGRES_BD}
     ports:
       - "5432:5432"
